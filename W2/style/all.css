@@ -39,14 +39,39 @@ body {
 
 /* 通用樣式 */
 a {
-  color: var(--primary-400);
-  text-underline-offset: 4px;
+  color: var(--neutral-900);
+  text-decoration: none;
   display: block;
+  font-weight: 500;
 }
 
 img {
   max-width: 100%;
+  height: auto;
   vertical-align: middle;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.align-items-center {
+  align-items: center;
 }
 
 .h1,
@@ -107,14 +132,83 @@ img {
 .bg-primary-100 {
   background-color: var(--primary-100);
 }
+.bg-primary-200 {
+  background-color: var(--primary-200);
+}
 
 .bg-neutral-100 {
   background-color: var(--neutral-100);
 }
 /* 間距設定 */
 .container {
-  max-width: 856px;
+  max-width: 1296px;
   margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+.col-2 {
+  width: calc(100% / 12 * 2);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.col-3 {
+  width: calc(100% / 12 * 3);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.col-4 {
+  width: calc(100% / 12 * 4);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.col-5 {
+  width: calc(100% / 12 * 5);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.col-6 {
+  width: calc(100% / 12 * 6);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.col-7 {
+  width: calc(100% / 12 * 7);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.col-8 {
+  width: calc(100% / 12 * 8);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.col-9 {
+  width: calc(100% / 12 * 9);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.col-10 {
+  width: calc(100% / 12 * 10);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.col-11 {
+  width: calc(100% / 12 * 11);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.col-12 {
+  width: 100%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.p-12 {
+  padding: 12px;
 }
 
 .p-48 {
@@ -123,15 +217,39 @@ img {
 .pe-8 {
   padding-left: 8px;
 }
+.pe-40 {
+  padding-left: 40px;
+}
+.pe-48 {
+  padding-left: 48px;
+}
 .pr-8 {
   padding-right: 8px;
+}
+.pb-24 {
+  padding-bottom: 24px;
 }
 .pb-48 {
   padding-bottom: 48px;
 }
+.pb-64 {
+  padding-bottom: 64px;
+}
 .py-8 {
   padding-top: 8px;
   padding-bottom: 8px;
+}
+.py-12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.py-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.py-24 {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .py-32 {
   padding-top: 32px;
@@ -142,8 +260,22 @@ img {
   padding-top: 64px;
   padding-bottom: 64px;
 }
+
+.px-12 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
 .mr-12 {
   margin-right: 12px;
+}
+.me-8 {
+  margin-left: 8px;
+}
+.me-12 {
+  margin-left: 12px;
+}
+.mr-24 {
+  margin-right: 24px;
 }
 .mb-4 {
   margin-bottom: 4px;
@@ -157,6 +289,9 @@ img {
 .mb-24 {
   margin-bottom: 24px;
 }
+.mb-32 {
+  margin-bottom: 32px;
+}
 .mb-48 {
   margin-bottom: 48px;
 }
@@ -168,44 +303,27 @@ img {
   text-align: center;
 }
 
-/* page */
-.header {
-  text-align: center;
-  padding-top: 151px;
-  padding-bottom: 151px;
-  background-image: url(../img/Hero\ from\ Week\ 1.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/* 元件 */
+.btn {
+  border-radius: 4px;
+  cursor: pointer;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  border: none;
+  /* 透明色背景 */
+  background-color: transparent;
 }
 
-.intro img {
-  max-width: 1076px;
-  margin-right: -110px;
-  margin-left: -110px;
+.btn-dark {
+  background-color: var(--neutral-900);
+  color: var(--color-white);
 }
 
 .section-line {
   border-bottom: 1px solid var(--neutral-300);
-}
-.history-list {
-  /* 段落前方圓點 */
-  list-style-type: disc;
-  /* 因左側圓點沒有對齊，需在ul上加上pd */
-  padding-left: 24px;
-}
-.history-desc {
-  border-left: 1px solid var(--neutral-900);
-  padding-left: 8px;
-}
-
-.concept-item {
-  border-left: 3px solid var(--neutral-300);
-  padding-left: 12px;
-}
-
-.bi {
-  padding-right: 8px;
-  /* 使icon底部對齊 */
-  vertical-align: bottom;
 }
