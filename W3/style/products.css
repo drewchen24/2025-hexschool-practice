@@ -1,0 +1,33 @@
+.breadcrumbs-item + .breadcrumbs-item::before {
+  content: "/";
+  padding: 0 12px;
+  color: var(--neutral-300);
+  font-weight: 700;
+}
+.breadcrumbs-item {
+  display: flex;
+}
+
+.breadcrumbs-item {
+  color: var(--neutral-900);
+  font-weight: 500;
+}
+.breadcrumbs-link {
+  color: var(--neutral-500);
+  font-weight: 500;
+}
+
+.category .active {
+  color: var(--primary-400);
+  font-weight: 500;
+}
+
+.page-item .btn {
+  border-radius: 0;
+  font-weight: 400;
+  padding: 8px 15px;
+}
+.page-item .active {
+  background-color: var(--primary-300);
+  font-weight: 500;
+}
