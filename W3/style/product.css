@@ -5,10 +5,24 @@
   margin-right: -4px;
   margin-left: -4px;
 }
+
 .product-col {
   width: calc(100% / 12 * 6);
   padding-right: 4px;
   padding-left: 4px;
+}
+
+@media screen and (max-width: 767px) {
+  .product-row {
+    margin-right: -12px;
+    margin-left: -12px;
+  }
+
+  .product-col {
+    width: calc(100% / 4 * 4);
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 }
 
 /* product color */
@@ -35,4 +49,24 @@
 }
 .product-action .btn {
   width: 50%;
+}
+@media screen and (max-width: 767px) {
+  .product-action .btn {
+    width: 100%;
+  }
+  .product-action .btn-icon {
+    font-size: 24px;
+    padding: 12px;
+    border: var(--color-white);
+    background: var(--color-white);
+    cursor: pointer;
+  }
+}
+
+/* recommend card */
+@media screen and (max-width: 767px) {
+  .recommend-card {
+    max-width: 300px;
+    flex-shrink: 0;
+  }
 }

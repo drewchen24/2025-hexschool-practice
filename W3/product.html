@@ -22,52 +22,52 @@
           <img src="./img/Logo-for-Week-1-Training.svg" alt="logo" />
         </li>
 
-        <li class="py-12 pe-48">
-          <a href="./products.html" class="nav-link"></a>商品列表
+        <li class="py-12 ps-48 d-sm-none">
+          <a href="./products.html" class="nav-link">商品列表</a>
         </li>
-        <li class="py-12 pe-40">
-          <a href="./story.html" class="nav-link"></a>品牌故事
+        <li class="py-12 ps-40 d-sm-none">
+          <a href="./story.html" class="nav-link">品牌故事</a>
         </li>
       </ul>
       <a href="#" class="p-12"><i class="bi bi-person"></i></a>
     </nav>
-    <main class="py-64 mb-48">
+    <main class="py-64 py-md-0 mb-48 mb-md-40">
       <div class="container">
         <div class="row">
           <!-- product image -->
-          <div class="col-7">
+          <div class="col-7 col-sm-12">
             <div class="product-row">
               <div class="product-col mb-4">
                 <img src="./img/Web Layout Training Image.png" alt="product" />
               </div>
-              <div class="product-col mb-4">
+              <div class="product-col mb-4 d-md-none">
                 <img src="./img/Week 2 Image 1.png" alt="product-1" />
               </div>
-              <div class="product-col mb-4">
+              <div class="product-col mb-4 d-md-none">
                 <img
                   src="./img/Image 2 from Week 2 Training.png"
                   alt="product-2"
                 />
               </div>
-              <div class="product-col mb-4">
+              <div class="product-col mb-4 d-md-none">
                 <img
                   src="./img/Image 3 from Week 2 Training.png"
                   alt="product-3"
                 />
               </div>
-              <div class="product-col mb-4">
+              <div class="product-col mb-4 d-md-none">
                 <img src="./img/Image 4 from Week 2.png" alt="product-4" />
               </div>
-              <div class="product-col mb-4">
+              <div class="product-col mb-4 d-md-none">
                 <img
                   src="./img/Image 5 from Week 2 Training.png"
                   alt="product-5"
                 />
               </div>
-              <div class="product-col mb-4">
+              <div class="product-col mb-4 d-md-none">
                 <img src="./img/Week 2 Image 6.png" alt="product-6" />
               </div>
-              <div class="product-col mb-4">
+              <div class="product-col mb-4 d-md-none">
                 <img
                   src="./img/Image 7 from Week 2 Training.png"
                   alt="product-7"
@@ -75,9 +75,9 @@
               </div>
             </div>
           </div>
-          <div class="col-5">
+          <div class="col-5 col-sm-4">
             <!-- breadcrumbs -->
-            <nav class="mb-12">
+            <nav class="mb-24 mb-md-8 mt-md-24">
               <ol class="d-flex">
                 <li class="breadcrumbs-item">
                   <a href="./index.html" class="breadcrumbs-link">首頁</a>
@@ -92,8 +92,8 @@
               </ol>
             </nav>
             <!-- info -->
-            <h2 class="h2 mb-16">Platform 404</h2>
-            <h5 class="h5 text-primary-400 mb-16">
+            <h2 class="h2 h4-sm mb-16">Platform 404</h2>
+            <h5 class="h5 h6-sm text-primary-400 mb-16 mb-md-12">
               NT$2,600<del class="text-sm text-neutral-500 ms-8">NT$3,200</del>
             </h5>
             <div>
@@ -106,7 +106,7 @@
               </p>
             </div>
             <!-- product color -->
-            <div class="mb-32">
+            <div class="mb-32 mb-md-24">
               <h5 class="text-md mb-8">顏色</h5>
               <div class="d-flex">
                 <div class="product-color me-8">
@@ -118,12 +118,12 @@
                   <p>藍色</p>
                 </div>
                 <div class="product-color">
-                  <img src="./img/Product 1.png" alt="Product" class="mb-4" />
+                  <img src="./img/Product-1.png" alt="Product" class="mb-4" />
                   <p>卡其色</p>
                 </div>
               </div>
             </div>
-            <div class="mb-48">
+            <div class="mb-48 mb-md-24">
               <h5 class="text-md mb-8">尺寸</h5>
               <div class="d-flex flex-wrap gap-8 mb-8">
                 <button type="button" class="btn btn-product-size active">
@@ -157,11 +157,14 @@
               <p class="text-sm text-danger-300">僅剩 3 雙</p>
             </div>
             <div class="product-action mb-32">
-              <button type="button" class="btn btn-light">
+              <button type="button" class="btn btn-light d-sm-none">
                 <i class="bi bi-heart me-8"></i>加入收藏
               </button>
               <button type="button" class="btn btn-dark">
                 <i class="bi bi-bag me-8"></i>門市預約試穿
+              </button>
+              <button type="button" class="btn-icon d-none d-md-block">
+                <i class="bi bi-heart"></i>
               </button>
             </div>
             <div>
@@ -199,32 +202,32 @@
     <!-- recommend -->
     <section class="py-48 mb-40">
       <div class="container">
-        <h4 class="h4 mb-16">你可能也喜歡...</h4>
-        <div class="d-flex">
-          <div class="me-24">
+        <h4 class="h4 h5-sm mb-16">你可能也喜歡...</h4>
+        <div class="d-flex overflow-x-md-auto">
+          <div class="recommend-card me-24 me-md-16">
             <a href="./product.html">
-              <img src="./img/Product 2.png" alt="VM001" class="mb-12" />
+              <img src="./img/Product-2.png" alt="VM001" class="mb-12" />
               <h6 class="h6 mb-4">VM001</h6>
               <p class="text-md">NT$2,600</p>
             </a>
           </div>
-          <div class="me-24">
+          <div class="recommend-card me-24 me-md-16">
             <a href="./product.html">
-              <img src="./img/Product 3.png" alt="Melty Kiss " class="mb-12" />
+              <img src="./img/Product-3.png" alt="Melty-Kiss" class="mb-12" />
               <h6 class="h6 mb-4">Melty Kiss</h6>
               <p class="text-md">NT$4,000</p>
             </a>
           </div>
-          <div class="me-24">
+          <div class="recommend-card me-24 me-md-16">
             <a href="./product.html">
-              <img src="./img/Product 4.png" alt="BOOMBLOK" class="mb-12" />
+              <img src="./img/Product-4.png" alt="BOOMBLOK" class="mb-12" />
               <h6 class="h6 mb-4">BOOMBLOK</h6>
               <p class="text-md">NT$3,200</p>
             </a>
           </div>
-          <div class="me-24">
+          <div class="recommend-card me-24 me-md-16">
             <a href="./product.html">
-              <img src="./img/Product 7.png" alt="Sugar Snap" class="mb-12" />
+              <img src="./img/Product-7.png" alt="Sugar-Snap" class="mb-12" />
               <h6 class="h6 mb-4">Sugar Snap</h6>
               <p class="text-md">NT$3,200</p>
             </a>
@@ -236,22 +239,24 @@
     <section class="bg-primary-200 py-24">
       <div class="container">
         <div class="d-flex justify-content-center align-items-center">
-          <h4 class="h4 me-24">加入會員取得 9 折優惠</h4>
-          <button type="button" class="btn btn-dark">馬上註冊</button>
+          <h4 class="h4 h5-sm me-24 me-md-16">加入會員取得 9 折優惠</h4>
+          <button type="button" class="btn btn-dark py-8">馬上註冊</button>
         </div>
       </div>
     </section>
 
-    <footer class="bg-neutral-100 py-64">
+    <footer class="bg-neutral-100 py-64 py-md-32">
       <div class="container">
-        <nav class="d-flex justify-content-between pb-24 mb-32 section-line">
+        <nav
+          class="d-flex d-md-block justify-content-between pb-24 pb-md-12 mb-32 section-line"
+        >
           <img src="./img/Logo-for-Week-1-Training.svg" alt="logo" />
-          <ul class="d-flex">
-            <li class="py-12 pe-48">
-              <a href="./products.html" class="nav-link"></a>商品列表
+          <ul class="d-flex d-md-block">
+            <li class="py-12 ps-48 ps-md-12">
+              <a href="./products.html" class="nav-link">商品列表</a>
             </li>
-            <li class="py-12 pe-40">
-              <a href="./story.html" class="nav-link"></a>品牌故事
+            <li class="py-12 ps-40 ps-md-12">
+              <a href="./story.html" class="nav-link">品牌故事</a>
             </li>
           </ul>
         </nav>

@@ -102,7 +102,14 @@ img {
 .gap-8 {
   gap: 8px;
 }
-
+.overflow-x-auto {
+  overflow-x: auto;
+}
+@media screen and (max-width: 567px) {
+  .overflow-x-md-auto {
+    overflow-x: auto;
+  }
+}
 .h1,
 .h2,
 .h3,
@@ -429,6 +436,10 @@ img {
   .pb-md-64 {
     padding-bottom: 64px;
   }
+  .py-md-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
   .py-md-8 {
     padding-top: 8px;
     padding-bottom: 8px;
@@ -576,6 +587,9 @@ img {
 @media screen and (max-width: 768px) {
   .me-md-16 {
     margin-right: 16px;
+  }
+  .mt-md-24 {
+    margin-top: 24px;
   }
   .mb-md-0 {
     margin-bottom: 0px;
