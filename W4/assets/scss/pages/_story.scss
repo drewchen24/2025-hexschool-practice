@@ -1,0 +1,67 @@
+/* page */
+.header {
+  text-align: center;
+  padding-top: 151px;
+  padding-bottom: 151px;
+  background-image: url(/assets/images/Hero-from-Week-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 576px) {
+  .header {
+    padding-top: 87px;
+    padding-bottom: 87px;
+    background-image: url(/assets/images/hero-sm.png);
+  }
+}
+
+.intro img {
+  max-width: 1076px;
+  margin-right: -110px;
+  margin-left: -110px;
+}
+@media screen and (max-width: 767px) {
+  .intro img {
+    max-width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+
+.section-line {
+  border-bottom: 1px solid $neutral-300;
+}
+.history-list {
+  /* 段落前方圓點 */
+  list-style-type: disc;
+  /* 因左側圓點沒有對齊，需在ul上加上pd */
+  padding-left: 24px;
+}
+.history-desc {
+  border-left: 1px solid $neutral-900;
+  padding-left: 8px;
+}
+
+.concept-item {
+  border-left: 3px solid $neutral-300;
+  padding-left: 12px;
+}
+
+.bi {
+  padding-left: 4px;
+  padding-right: 4px;
+
+  /* 使icon底部對齊 */
+  vertical-align: bottom;
+}
+
+.story-link {
+  color: $primary-400;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.section-line {
+  border-bottom: 1px solid $neutral-300;
+}
